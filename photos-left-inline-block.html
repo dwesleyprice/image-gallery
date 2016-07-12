@@ -3,6 +3,7 @@
 <head>
 	<title>Unit 1: Day 1 - Image Gallery</title>
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+
 <style type="text/css" media="screen">
 	body{
 		background-color: black;
@@ -17,14 +18,16 @@
 		/* Force the page to be at least 100% */
 		min-height: 100vh;
 			/* vh means viewport height. this makes the height at least as tall as the screen. */
-		/* float: left; */
-		overflow: hidden;
 	}
+	
+	#left, #right{
+		display: inline-block;
+	}
+
 	#left{
 		/* i make the div 20% of the width of my parent */
 		width: 20%;
 		/* i float to the left and don't acknowledge anything else */
-		float: left;
 	}
 
 	#left img{
@@ -42,8 +45,6 @@
 
 	#right{
 		width: 60%;
-		float: left;
-		padding-top: 10px;
 	}
 
 	#right img{
